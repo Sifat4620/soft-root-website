@@ -127,6 +127,43 @@
   }
 }
 
+/* Added custom cursor styles for smooth animations and mobile compatibility */
+/* Custom cursor styles */
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: all 0.1s ease-out;
+}
+
+.custom-cursor-follower {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.custom-cursor-outer {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9997;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Hide custom cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor,
+  .custom-cursor-follower,
+  .custom-cursor-outer {
+    display: none !important;
+  }
+
+  body {
+    cursor: auto !important;
+  }
+}
+
 /* Enhanced animations for management systems website */
 @keyframes float {
   0%,
@@ -168,6 +205,26 @@
   50% {
     box-shadow: 0 0 0 10px rgba(74, 222, 128, 0);
   }
+}
+
+/* Added cursor pulse animation for interactive elements */
+@keyframes cursor-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.cursor-pulse {
+  animation: cursor-pulse 1.5s ease-in-out infinite;
 }
 
 /* Added typewriter animation for auto-typing effect */

@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import { JetBrains_Mono } from "next/font/google"
 import { Suspense } from "react"
 import "./globals.css"
+import CustomCursor from "@/components/custom-cursor"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -199,7 +200,8 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`font-sans ${inter.variable} ${jetbrainsMono.variable} antialiased`}>
+      <body className={`font-sans ${inter.variable} ${jetbrainsMono.variable} antialiased cursor-none`}>
+        <CustomCursor />
         <Suspense fallback={null}>{children}</Suspense>
       </body>
     </html>
