@@ -7,20 +7,26 @@ import { Badge } from "@/components/ui/badge"
 import { Linkedin, Twitter, Github, Mail } from "lucide-react"
 
 const teamMembers = [
-  {
-    id: 1,
-    name: "Alex Chen",
-    role: "CEO & Founder",
-    bio: "Visionary leader with 15+ years in sustainable technology. Former VP of Engineering at GreenTech Solutions. Passionate about building software that creates positive environmental impact.",
-    image: "/professional-headshot-of-asian-ceo-in-modern-offi.jpg",
-    skills: ["Strategic Leadership", "Product Vision", "Sustainable Tech"],
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      email: "alex@softroot.com",
-    },
-    achievements: ["Forbes 30 Under 30", "Green Tech Innovation Award", "TEDx Speaker"],
+ {
+  id: 1,
+  name: "Fahim Faisal Sifat",
+  role: " DevOps Engineer, SQUARE Cloud",
+  bio: "Assistant Deputy Team Leader at SQUARE Cloud with strong expertise in DevOps. Former Software Engineer at SQUARE InformatiX Ltd. Experienced in building scalable, cloud-native infrastructures and fostering engineering collaboration.",
+  image: "/images/sifat.jpg", 
+  skills: ["DevOps", "Cloud Infrastructure", "Automation", "Team Leadership"],
+  social: {
+    linkedin: "#",    
+    twitter: "#",     
+    email: "fahim.sil@squaregroup.com",
+    phone: "01886282789",
+    address: "SQUARE Center, 48 Mohakhali, Dhaka"
   },
+  achievements: [
+    "Assistant Deputy Team Leader at SQUARE Cloud",
+    "Ex Software Engineer at SQUARE InformatiX Ltd"
+  ],
+},
+
   {
     id: 2,
     name: "Sarah Rodriguez",
