@@ -19,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "SoftRoot - Global Software Development Company | Enterprise Solutions Worldwide",
+  title: "Soft Root - Global Software Development Company | Enterprise Solutions Worldwide",
   description:
     "Leading software development company providing enterprise solutions globally. Custom software, web development, mobile apps, CRM, HRM, inventory management systems for businesses worldwide. Serving USA, UK, Canada, Australia, India, Europe.",
   keywords: [
