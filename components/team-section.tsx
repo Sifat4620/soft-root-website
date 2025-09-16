@@ -10,9 +10,9 @@ const teamMembers = [
  {
   id: 1,
   name: "Fahim Faisal Sifat",
-  role: " Engineering Director",
+  role: " Chief Technology Officer ",
   bio: "Assistant Deputy Team Leader at SQUARE Cloud with strong expertise in DevOps. Former Software Engineer at SQUARE InformatiX Ltd. Experienced in building scalable, cloud-native infrastructures and fostering engineering collaboration.",
-  image: "/images/sifat.jpeg", 
+  image: "/images/sifat.png", 
   skills: ["DevOps", "Cloud Infrastructure", "Automation", "Team Leadership"],
   social: {
     linkedin: "#",    
